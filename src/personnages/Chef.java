@@ -28,8 +28,8 @@ public class Chef {
 	}
 	
 	public void frapper(Romain romain) {
-		System.out.println("" + nom + "envoi un grand coup dans la machoire de " + romain(getNom()));
+		System.out.println("" + nom + "envoi un grand coup dans la machoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
-	
+		
 }
