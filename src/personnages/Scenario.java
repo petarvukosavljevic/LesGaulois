@@ -3,16 +3,18 @@ package personnages;
 public class Scenario {
 
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("Astérix", 8);
+		Gaulois asterix = new Gaulois("Astï¿½rix", 8);
 		Romain minus = new Romain("Minus", 6);
-		asterix.prendreParole();
-		asterix.parler("Bonjour à tous");
-		minus.prendreParole();
-		minus.parler("UN GAU...UN GAUGAU...");
+		Gaulois obelix = new Gaulois("Obelix", 25);
+		Druide panoramix = new Druide("Panoramix", 5, 10);
+		panoramix.parler("Je vais preparer une potion...");
+		panoramix.preparerPotion();
+		panoramix.booster(obelix);
+		obelix.parler("Par Belenos, ce n'est pas juste! ");
+		asterix.parler("Bonjour");
+		minus.parler("UN GAU... UN GAUGAU...");
 		asterix.frapper(minus);
-		asterix.frapper(minus);
-		asterix.frapper(minus);
-		
+
 	}
 
 }

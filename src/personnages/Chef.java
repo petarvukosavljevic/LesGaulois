@@ -7,11 +7,10 @@ public class Chef {
 	private Village village;
 	
 	
-	public Chef(String nom, int force, int effectPotion, Village village) {
+	public Chef(String nom, int force,  Village village) {
 		super();
 		this.nom = nom;
 		this.force = force;
-		this.effectPotion = effectPotion;
 		this.village = village;
 	}
 	
