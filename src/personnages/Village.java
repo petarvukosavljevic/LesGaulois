@@ -7,7 +7,6 @@ public class Village {
 	private int nbVillageois = 0;
 
 	public Village(String nom, int nbVillageoisMaximum) {
-		super();
 		this.nom = nom;
 		this.villageois = new Gaulois[nbVillageoisMaximum];
 	}

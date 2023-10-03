@@ -44,13 +44,14 @@ public class Druide {
 
 	public void booster(Gaulois gaulois) {
 		nom = gaulois.getNom();
-		if (nom != "Obelix") {
+		if (nom.equals("Obelix")) {
 			System.out.println("Non, Obelix!... Tu n'aurais pas de potion magique ! ");
 		}
 		else {
 			gaulois.boirePotion(forcePotion);
 		}
 	}
+	
 
 	public static void main(String[] args) {
 		Druide panoramix = new Druide("Panoramix", 5, 10);
