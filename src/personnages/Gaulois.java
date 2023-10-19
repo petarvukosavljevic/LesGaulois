@@ -44,7 +44,17 @@ public class Gaulois {
 		}
 	}
 
-
+	public void faireUneDonnation(Musee musee) {
+		if (nbTrophees > 0) {
+			parler("Je donne au musee tous mes trophees: ");
+			for (int i = 0; i < nbTrophees; i++) {
+				System.out.println("- " + trophees[i]);
+				musee.donnerTrophees(this, trophees[i]);
+			}
+		} else {
+			System.out.println("Pas de trophees!");
+		}
+	}
 	
 	public void boirePotion(int forcePotion) {
 		effectPotion = forcePotion;
